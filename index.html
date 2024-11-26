@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGO POGGERS</title>
+    <style>
+        td{
+            background-color: gray;
+            width: 120px;
+            height: 120px;
+            color: white;
+            cursor: pointer;
+            margin: auto;
+            text-align: center;
+            font-size: 100px;
+        }
+        td:hover{
+            background-color: gainsboro;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td onclick="banana_split(this)"></td>
+                <td onclick="banana_split(this)"></td>
+                <td onclick="banana_split(this)"></td>
+            </tr>
+            <tr>
+                <td onclick="banana_split(this)"></td>
+                <td onclick="banana_split(this)"></td>
+                <td onclick="banana_split(this)"></td>
+            </tr>
+            <tr>
+                <td onclick="banana_split(this)"></td>
+                <td onclick="banana_split(this)"></td>
+                <td onclick="banana_split(this)"></td>
+        </tbody>
+    </table>
+    <script>
+        let jogador = "X"
+            
+        function banana_split(td){
+            td.innerHTML = jogador
+        
+        if(jogador == "X"){
+            jogador = "O"
+        }
+
+        else{
+            jogador ="X"
+    }
+
+        }
+        
+
+    </script>
+</body>
+</html>
